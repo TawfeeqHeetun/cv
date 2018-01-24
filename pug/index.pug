@@ -1,0 +1,33 @@
+doctype html
+html(lang='de')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+    link(rel="icon" type="image/png" href="/favicon.png")
+    link(rel="shortcut icon" type="image/png" href="/favicon.png")
+    link(href='react_trial/cv/css/react_css.min.css?v=1.0', rel='stylesheet', media='all')
+    <link href="https://fonts.googleapis.com/css?family=Anton|Rokkitt|Kavivanar|Source+Code+Pro" rel="stylesheet">
+    block title
+      title React
+    style
+      include ../css/react_css.min.css
+    noscript#deferred-styles
+      block styles
+        link(href='react_trial/cv/css/react_css.min.css?v=1.0', rel='stylesheet', media='all')
+    script.
+      dataLayer = [];
+
+    body
+      header
+      .app#app
+      #banner
+      #details
+
+      footer
+        block scripts
+          script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+          script(src='https://cdnjs.cloudflare.com/ajax/libs/react/0.13.0/react.min.js')
+          script
+              include ../js/react_js.min.js
+          script(async='', src='react_trial/cv/js/react_js.min.js')
